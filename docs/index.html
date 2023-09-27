@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./imgs/logo.jpeg" type="image/jpeg">
+    <title>Log In</title>
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <!-- font awesome -->
+    <link
+      defer
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- flowbite -->
+    <link
+      defer
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-gray-50 font-sans text-gray-800 antialiased h-screen w-screen"
+  >
+    <div class="w-full h-full flex items-center justify-center">
+      <div
+        class="bg-white w-100 py-6 px-6 rounded shadow flex items-center justify-center flex-col space-y-6"
+      >
+        <div class="w-32 h-20">
+          <img src="./imgs/logo.jpeg" class="w-full h-full object-cover object-center" alt="logo" />
+        </div>
+        <div id="login" class="px-4 w-full">
+          <h2 class="w-full uppercase px-4 ml-2 font-bold text-2xl text-gray-800">
+            Log In
+          </h2>
+          <form
+            action="account.html"
+            name="form"
+            onsubmit="return validated()"
+            class="px-4 py-3 space-y-4 mt-4"
+          >
+            <div class="w-full px-2 space-y-1">
+              <label for="Phone" class="text-base font-semibold text-gray-800"
+                >Phone</label
+              >
+              <div class="py-2 w-full">
+                <input
+                  type="text"
+                  class="w-full border border-blue-500 outline-blue-700 hover:outline-blue-700 focus:outline-blue-700 py-2 px-2 placeholder:text-gray-400 placeholder:text-sm placeholder:ml-4 rounded"
+                  placeholder="Phone number"
+                  autofocus
+                  name="phone"
+                  id="number"
+                  autocomplete="off"
+                />
+                <div
+                id="num_error"
+                 class="hidden mt-2 text-sm font-semibold text-red-800 px-2 py-2 rounded border-red-700 bg-red-600 bg-opacity-50">
+                    Please enter your phone number* 
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-2 space-y-1">
+              <label
+                for="Password"
+                class="text-base font-semibold text-gray-800"
+                >Password</label
+              >
+              <div class="py-2 w-full">
+                <input
+                  type="password"
+                  id="password"
+                  name="pass"
+                  class="w-full border border-blue-500 outline-blue-700 hover:outline-blue-700 focus:outline-blue-700 py-2 px-2 placeholder:text-gray-400 placeholder:text-sm placeholder:ml-4 rounded"
+                  placeholder="Enter password"
+                  
+                />
+                <div
+                id="pass_error"
+                class="hidden mt-2 text-sm text-red-800 px-2 py-2 rounded border-red-700 bg-red-600 bg-opacity-50">
+                    Please enter your Password* 
+                </div>
+              </div>
+            </div>
+            <div class="mt-2 w-full flex justify-center px-2">
+              <button
+                type="submit"
+                class="w-full mx-auto text-center px-6 py-3 rounded-md text-white bg-blue-700 hover:bg-blue-800 transition-all duration-200 text-lg font-semibold capitalize mt-6"
+              >
+                Log In
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <!-- flowbite Script -->
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"
+    ></script>
+  </body>
+</html>

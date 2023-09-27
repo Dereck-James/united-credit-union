@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./imgs/logo.jpeg" type="image/jpeg" />
+    <title>Account: United Credit Union</title>
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <!-- font awesome -->
+    <link
+      defer
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- flowbite -->
+    <link
+      defer
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="w-full border-t-4 border-t-blue-800"
+      style="background-image: url('./imgs/united_bank.png')"
+    >
+      <div class="max-w-7xl mx-auto">
+        <nav class="bg-white border-x-2 border-x-gray-300 border-gray-200">
+          <div
+            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+          >
+            <a href="#" class="flex items-center grow">
+              <img
+                src="./imgs/logo.jpeg"
+                class="h-20 mr-3"
+                alt="United Credit Union"
+              />
+              <span class="self-center text-xl md:text-3xl font-normal whitespace-nowrap"
+                >United Credit Union</span
+              >
+            </a>
+
+            <!-- <div
+              class="px-6 py-1 border-2 shadow flex items-center justify-between space-x-2"
+            >
+              <div class="px-2 inline-block">
+                <h5 class="text-gray-800 font-semibold">Account Owner</h5>
+                <span class="text-gray-800 text-sm capitalize"
+                  >Cody Jackson</span
+                >
+              </div>
+              <img
+                src="./imgs/author.jpeg"
+                class="w-16 object-contain object-center rounded-full"
+                alt=""
+              />
+            </div> -->
+          </div>
+        </nav>
+        <!-- navbar ends -->
+
+        <div class="bg-gray-100 w-full py-7"></div>
+        <section class="w-full bg-blue-800 h-full">
+          <div class="space-x-6">
+            <div
+              id="scroll"
+              class="w-full flex items-center justify-between space-x-4"
+            >
+              <div class="w-full">
+                <div class="grid lg:grid-cols-2 w-full py-2 gap-6">
+                  <div class="w-full">
+                    <div
+                      id="default-carousel"
+                      class="relative w-full"
+                      data-carousel="slide"
+                    >
+                      <!-- Carousel wrapper -->
+                      <div class="relative overflow-hidden h-96">
+                        <!-- Item 1 -->
+                        <div
+                          class="hidden duration-700 ease-in-out"
+                          data-carousel-item
+                        >
+                          <img
+                            src="./imgs/red_united.jpg"
+                            class="absolute block w-full -translate-x-1/2 left-1/2 h-full object-center object-fill"
+                            alt="..."
+                          />
+                        </div>
+                        <!-- Item 2 -->
+                        <div
+                          class="hidden duration-700 ease-in-out"
+                          data-carousel-item
+                        >
+                          <img
+                            src="./imgs/community.jpg"
+                            class="absolute block w-full -translate-x-1/2 left-1/2 h-full object-center object-fill"
+                            alt="..."
+                          />
+                        </div>
+                        <!-- Item 3 -->
+                        <div
+                          class="hidden duration-700 ease-in-out"
+                          data-carousel-item
+                        >
+                          <img
+                            src="./imgs/summer_letter.jpg"
+                            class="absolute block w-full -translate-x-1/2 left-1/2 h-full object-center object-fill"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <!-- Slider indicators -->
+                      <div
+                        class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
+                      >
+                        <button
+                          type="button"
+                          class="w-3 h-3 rounded-full"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                          data-carousel-slide-to="0"
+                        ></button>
+                        <button
+                          type="button"
+                          class="w-3 h-3 rounded-full"
+                          aria-current="false"
+                          aria-label="Slide 2"
+                          data-carousel-slide-to="1"
+                        ></button>
+                        <button
+                          type="button"
+                          class="w-3 h-3 rounded-full"
+                          aria-current="false"
+                          aria-label="Slide 3"
+                          data-carousel-slide-to="2"
+                        ></button>
+                      </div>
+                      <!-- Slider controls -->
+                      <button
+                        type="button"
+                        class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-prev
+                      >
+                        <span
+                          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                        >
+                          <svg
+                            class="w-4 h-4 text-white dark:text-gray-800"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 6 10"
+                          >
+                            <path
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 1 1 5l4 4"
+                            />
+                          </svg>
+                          <span class="sr-only">Previous</span>
+                        </span>
+                      </button>
+                      <button
+                        type="button"
+                        class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-next
+                      >
+                        <span
+                          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                        >
+                          <svg
+                            class="w-4 h-4 text-white dark:text-gray-800"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 6 10"
+                          >
+                            <path
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="m1 9 4-4-4-4"
+                            />
+                          </svg>
+                          <span class="sr-only">Next</span>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center w-full py-4 px-4"
+                  >
+                    <div class="md:order-2 w-full">
+                      <img
+                        src="./imgs/author.jpeg"
+                        alt="Acccount Owner"
+                        class="shadow"
+                      />
+                      <div
+                        class="mt-2 bg-gray-50 bg-opacity-50 px-2 py-3 space-y-2 rounded-md"
+                      >
+                        <div>
+                          <h3 class="inline-block font-bold">
+                            Acccount Owner:
+                          </h3>
+                          <span class="font-semibold text-gray-800"
+                            >Mr Cody Jackson</span
+                          >
+                        </div>
+                        <div>
+                          <h3 class="inline-block font-bold">Bank Balance:</h3>
+                          <span class="font-semibold text-gray-800"
+                            >$2,400,000</span
+                          >
+                        </div>
+                        <div>
+                          <h3 class="inline-block font-bold">Mail:</h3>
+                          <a
+                            href="mailto:unitedcreditunionhead@outlook.com"
+                            class="font-semibold text-blue-800 underline"
+                            >Email Contact</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="w-full bg-white bg-opacity- px-2 py-2 shadow-md rounded-lg relative"
+                    >
+                      <div>
+                        <h2 class="font-semibold text-lg">Transactions</h2>
+
+                        <div id="accordion-collapse" data-accordion="collapse">
+                          <h2 id="accordion-collapse-heading-1">
+                            <button
+                              type="button"
+                              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                              data-accordion-target="#accordion-collapse-body-1"
+                              aria-expanded="true"
+                              aria-controls="accordion-collapse-body-1"
+                            >
+                              <span class="capitalize"
+                                >Check transaction history</span
+                              >
+                              <svg
+                                data-accordion-icon
+                                class="w-3 h-3 rotate-180 shrink-0"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 10 6"
+                              >
+                                <path
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M9 5 5 1 1 5"
+                                />
+                              </svg>
+                            </button>
+                          </h2>
+                          <div
+                            id="accordion-collapse-body-1"
+                            class="hidden"
+                            aria-labelledby="accordion-collapse-heading-1"
+                          >
+                            <div
+                              class="p-5 space-y-2 border border-b-0 border-gray-700 bg-gray-900"
+                            >
+                              <div
+                                class="px-2 space-y-1 py-1 border-b-2 rounded-b border-b-gray-100"
+                              >
+                                <div class="flex items-center justify-between">
+                                  <h3
+                                    class="font-semibold text-gray-400 text-base uppercase"
+                                  >
+                                    Chicago, Il 60632
+                                  </h3>
+                                  <span
+                                    class="text-gray-400 text-sm font-semibold"
+                                    >$100,100</span
+                                  >
+                                </div>
+                                <p class="text-sm text-gray-600 font-bold">
+                                  1st February 2021, debit
+                                </p>
+                              </div>
+                              <div
+                                class="px-2 space-y-1 py-1 border-b-2 rounded-b border-b-gray-100"
+                              >
+                                <div class="flex items-center justify-between">
+                                  <h3
+                                    class="font-semibold text-gray-400 text-base uppercase"
+                                  >
+                                    Chicago, Il 60632
+                                  </h3>
+                                  <span
+                                    class="text-gray-400 text-sm font-semibold"
+                                    >$100,100</span
+                                  >
+                                </div>
+                                <p class="text-sm text-gray-600 font-bold">
+                                  1st February 2021, debit
+                                </p>
+                              </div>
+                              <div
+                                class="px-2 space-y-1 py-1 border-b-2 rounded-b border-b-gray-100"
+                              >
+                                <div class="flex items-center justify-between">
+                                  <h3
+                                    class="font-semibold text-gray-400 text-base uppercase"
+                                  >
+                                    Chicago, Il 60632
+                                  </h3>
+                                  <span
+                                    class="text-gray-400 text-sm font-semibold"
+                                    >$100,100</span
+                                  >
+                                </div>
+                                <p class="text-sm text-gray-600 font-bold">
+                                  1st February 2021, debit
+                                </p>
+                              </div>
+                              
+                              <div
+                                class="px-2 space-y-1 py-1 border-b-2 rounded-b border-b-gray-100"
+                              >
+                                <div class="flex items-center justify-between">
+                                  <h3
+                                    class="font-semibold text-gray-400 text-base uppercase"
+                                  >
+                                    Chicago, Il 60632
+                                  </h3>
+                                  <span
+                                    class="text-gray-400 text-sm font-semibold"
+                                    >$100,100</span
+                                  >
+                                </div>
+                                <p class="text-sm text-gray-600 font-bold">
+                                  1st February 2021, debit
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- <div class="mt-2 px-3 space-y-3">
+                          <div class="px-2 space-y-1 py-1 border-b-2 rounded-b border-b-gray-600">
+                            <div class="flex items-center justify-between">
+                              <h3 class="font-semibold text-gray-900 text-base uppercase">Chicago, Il 60632</h3>
+                              <span class="text-gray-900 text-sm font-semibold">$100,100</span>
+                            </div>
+                            <p class="text-sm text-gray-600 font-bold">1st February 2021, debit</p>
+                          </div>
+                            
+                          <div class="px-2 space-y-1 py-1 border-b-2 rounded-b border-b-gray-600">
+                            <div class="flex items-center justify-between">
+                              <h3 class="font-semibold text-gray-900 text-base uppercase">Chicago, Il 60632</h3>
+                              <span class="text-gray-900 text-sm font-semibold">$100,100</span>
+                            </div>
+                            <p class="text-sm text-gray-600 font-bold">1st February 2021, debit</p>
+                          </div>
+                          <div class="px-2 space-y-1 py-1 border-b-2 rounded-b border-b-gray-600">
+                            <div class="flex items-center justify-between">
+                              <h3 class="font-semibold text-gray-900 text-base uppercase">Chicago, Il 60632</h3>
+                              <span class="text-gray-900 text-sm font-semibold">$100,100</span>
+                            </div>
+                            <p class="text-sm text-gray-600 font-bold">1st February 2021, debit</p>
+                          </div>
+                          <div class="px-2 space-y-1 py-1 border-b-2 rounded-b border-b-gray-600">
+                            <div class="flex items-center justify-between">
+                              <h3 class="font-semibold text-gray-900 text-base uppercase">Chicago, Il 60632</h3>
+                              <span class="text-gray-900 text-sm font-semibold">$100,100</span>
+                            </div>
+                            <p class="text-sm text-gray-600 font-bold">1st February 2021, debit</p>
+                          </div>
+                          <div class="px-2 space-y-1 py-1 border-b-2 rounded-b border-b-gray-600">
+                            <div class="flex items-center justify-between">
+                              <h3 class="font-semibold text-gray-900 text-base uppercase">Chicago, Il 60632</h3>
+                              <span class="text-gray-900 text-sm font-semibold">$100,100</span>
+                            </div>
+                            <p class="text-sm text-gray-600 font-bold">1st February 2021, debit</p>
+                          </div>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-white px-6 py-4 text-lg">
+                  <h3 class="font-semibold text-2xl">
+                    Welcome to United Credit Union,
+                    <em class="font-normal"
+                      ><q>Your financial Partiner For Life</q></em
+                    >
+                  </h3>
+                  <p class="my-2">
+                    With United Credit Union, you will enjoy access to the most
+                    complete list of financial products and services as well as
+                    benefits offered only to United Credit Union Members.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- main begins -->
+        <main>
+          <section class="py-8 lg:px-16 border-2">
+            <div
+              class="w-full py-10 lg:px-6 md:flex items-start justify-center  md:space-x-2"
+            >
+              <div class="flex-1 py-5 px-4">
+                <h3 class="font-semibold text-xl text-blue-900 mx-2 uppercase">
+                  United Credit Union
+                </h3>
+                <p class="mt-4 text-gray-700">
+                  In September, 1930, a small group of 15 teachers met at
+                  Calumet High School in Chicago, and pledged $165.00 to start a
+                  cooperative financial institution that would help teachers and
+                  their families to save their money and provide loans to each
+                  other at low interest rates.
+                </p>
+                <img
+                  src="./imgs/newsletter-graphic.png"
+                  class="object-contain object-center"
+                  alt=""
+                />
+              </div>
+
+              <div class="flex-1 py-5 px-4">
+                <h3 class="font-semibold text-xl text-blue-900 mx-2 uppercase">
+                  Loans
+                </h3>
+
+                <div class="md:pl-12 mt-4">
+                  <img
+                    src="./imgs/UCU_vehicle_loans-home.jpg"
+                    class="object-contain object-center"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="flex-1 py-5 px-4">
+                <h3 class="font-semibold text-xl text-blue-900 mx-2 uppercase">
+                  CO-OP Shared Branch
+                </h3>
+
+                <div class="md:pl-12 mt-4">
+                  <img
+                    src="./imgs/9fb482ed917e9ce0ffb9e95da9bb9509.webp"
+                    class="object-contain object-center"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="w-full bg-sky py-6 px-6">
+            <div
+              class="px-4 w-full flex items-center text-left justify-center flex-col"
+            >
+              <h3 class="text-xl font-semibold text-white italic">
+                Here is What our Members are Saying About our New Technology
+              </h3>
+              <div class="block">
+                <i
+                  class="fa-solid fa-quote-left text-4xl text-gray-700 inline"
+                ></i>
+                <p class="text-white py-3 px-6 text-lg inline-block">
+                  <em class="italic block">“Good idea for banking.”</em>
+                  Marshall J., UCU member for 8 years,
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="w-full pt-8 flex items-center justify-center">
+              <div class="border flex-1 w-full border-grayHip"></div>
+              <span class="px-4 uppercase text-gray-800 font-semibold"
+                >Partner Services</span
+              >
+              <div class="border flex-1 w-full border-grayHip"></div>
+            </div>
+
+            <div class="py-8 px-6 text-center">
+              <div class="max-w-xl mx-auto">
+                <h5 class="font=normal text-base text-gray-900">
+                  United Credit Union has a myriad of quality financial services
+                  available for its members. Kindly select a service and get the
+                  details!
+                </h5>
+              </div>
+              <div class="mt-2">
+                <div
+                  class="sm:px-9 py-3 grid grid-cols-2  sm:grid-cols-3 gap-4 max-w-6xl mx-auto place-content-center"
+                >
+                  <div class="sm:p-4">
+                    <img
+                      src="./imgs/ff/valic-logo-158x50.png"
+                      alt=""
+                      class="object-contain object-center"
+                    />
+                  </div>
+                  <div class="p-4">
+                    <img
+                      src="./imgs/ff/enterprise-car-sales.png"
+                      alt=""
+                      class="object-contain object-center"
+                    />
+                  </div>
+                  <div class="p-4">
+                    <img
+                      src="./imgs/ff/LMCU-Rewards-4C.jpg"
+                      alt=""
+                      class="object-contain object-center"
+                    />
+                  </div>
+                </div>
+                <div class="sm:px-9 grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-6xl mx-auto">
+                  <div class="p-4">
+                    <img
+                      src="./imgs/ff/TruStageLogo-1.png"
+                      alt=""
+                      class="object-contain object-center"
+                    />
+                  </div>
+                  <div class="p-4">
+                    <img
+                      src="./imgs/ff/UCHoose-Logo.png"
+                      alt=""
+                      class="object-contain object-center"
+                    />
+                  </div>
+                  <div class="p-4">
+                    <img
+                      src="./imgs/ff/CoOP-Shared-Branch-Logo-280x82.png"
+                      alt=""
+                      class="object-contain object-center"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-full pt-8 flex items-center justify-center">
+                <div class="flex-1 w-full relative border border-grayHip"></div>
+                <span class="px-4 uppercase text-gray-800 font-semibold"
+                  >United Credit Union's Member Service Centers</span
+                >
+                <div class="flex-1 w-full relative border border-grayHip"></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="py-3">
+            <div
+              class="w-full py-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 md:place-content-center px-3 md:px-0 md:place-items-center"
+            >
+              <div class="text-left text-sky p-2">
+                <h3 class="text-sky font-semibold text-base my-3">PULASKI</h3>
+                <div class="my-2">
+                  <p class="text-gray-700">
+                    4444 S. Pulaski Rd. <br />
+                    Chicago, Il 60632
+                  </p>
+                  <p class="mt-6 text-gray-700">1-773-376-6000</p>
+                  <p class="mt-6 text-gray-700">
+                    Monday – Friday 9am – <br />
+                    5:30pm
+                  </p>
+                  <p class="text-gray-700">
+                    Saturday 8:30am – 12:30pm <br />
+                    Drive Up Hours 9am
+                  </p>
+                  <p class="text-gray-700">Saturday 8am – 1pm</p>
+                </div>
+              </div>
+              <div class="text-left text-sky p-2">
+                <h3 class="text-sky font-semibold text-base my-3">PULASKI</h3>
+                <div class="my-2">
+                  <p class="text-gray-700">
+                    4444 S. Pulaski Rd. <br />
+                    Chicago, Il 60632
+                  </p>
+                  <p class="mt-6 text-gray-700">1-773-376-6000</p>
+                  <p class="mt-6 text-gray-700">
+                    Monday – Friday 9am – <br />
+                    5:30pm
+                  </p>
+                  <p class="text-gray-700">
+                    Saturday 8:30am – 12:30pm <br />
+                    Drive Up Hours 9am
+                  </p>
+                  <p class="text-gray-700">Saturday 8am – 1pm</p>
+                </div>
+              </div>
+              <div class="text-left text-sky p-2">
+                <h3 class="text-sky font-semibold text-base my-3">PULASKI</h3>
+                <div class="my-2">
+                  <p class="text-gray-700">
+                    4444 S. Pulaski Rd. <br />
+                    Chicago, Il 60632
+                  </p>
+                  <p class="mt-6 text-gray-700">1-773-376-6000</p>
+                  <p class="mt-6 text-gray-700">
+                    Monday – Friday 9am – <br />
+                    5:30pm
+                  </p>
+                  <p class="text-gray-700">
+                    Saturday 8:30am – 12:30pm <br />
+                    Drive Up Hours 9am
+                  </p>
+                  <p class="text-gray-700">Saturday 8am – 1pm</p>
+                </div>
+              </div>
+              <div class="text-left text-sky p-2">
+                <h3 class="text-sky font-semibold text-base my-3">PULASKI</h3>
+                <div class="my-2">
+                  <p class="text-gray-700">
+                    4444 S. Pulaski Rd. <br />
+                    Chicago, Il 60632
+                  </p>
+                  <p class="mt-6 text-gray-700">1-773-376-6000</p>
+                  <p class="mt-6 text-gray-700">
+                    Monday – Friday 9am – <br />
+                    5:30pm
+                  </p>
+                  <p class="text-gray-700">
+                    Saturday 8:30am – 12:30pm <br />
+                    Drive Up Hours 9am
+                  </p>
+                  <p class="text-gray-700">Saturday 8am – 1pm</p>
+                </div>
+              </div>
+              <div class="text-left text-sky p-2">
+                <h3 class="text-sky font-semibold text-base my-3">PULASKI</h3>
+                <div class="my-2">
+                  <p class="text-gray-700">
+                    4444 S. Pulaski Rd. <br />
+                    Chicago, Il 60632
+                  </p>
+                  <p class="mt-6 text-gray-700">1-773-376-6000</p>
+                  <p class="mt-6 text-gray-700">
+                    Monday – Friday 9am – <br />
+                    5:30pm
+                  </p>
+                  <p class="text-gray-700">
+                    Saturday 8:30am – 12:30pm <br />
+                    Drive Up Hours 9am
+                  </p>
+                  <p class="text-gray-700">Saturday 8am – 1pm</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <footer class="mt-12 pt-8 w-full">
+          <div
+            class="bg-footer w-full flex items-center justify-center text-white flex-col"
+          >
+            <div class="my-8">
+              <h1 class="font-semibold text-xl uppercase">Extra Information</h1>
+            </div>
+          </div>
+          <div class="py-12 px-4 bg-grayBlack w-full">
+            <div
+              class="max-w-5xl border-2 mx-auto bg-f_white flex items-center justify-center gap-6 md:gap-0 flex-wrap space-y-4 md:space-x-6 py-6"
+            >
+              <img
+                src="./imgs/ff/Equal1.gif"
+                class="object-contain object-center w-24"
+                alt=""
+              />
+              <img
+                src="./imgs/ff/CDFI_FCSEAL.gif"
+                class="object-contain object-center w-24"
+                alt=""
+              />
+              <img
+                src="./imgs/ff/bbb.jpg"
+                class="object-contain object-center w-24 h-16"
+                alt=""
+              />
+              <img
+                src="./imgs/ff/ncua-mid.gif"
+                class="object-contain object-center w-24"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="bg-black bg-opacity-80 w-full text-center text-gray-300 py-3 px-4 text-sm font-semibold">
+            © Copyright 2016 Website by Elliottsweb. All Rights Reserved.
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- flowbite Script -->
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"
+    ></script>
+  </body>
+</html>
